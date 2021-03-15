@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Journal | ChloroFeel</title>
+        <meta name="description" content="ChloroFeel is an innovative and portable chlorophyll detection system that can be used to measure water pollution levels in aquatic ecosystems.">
+        <meta charset="utf-8">
+        <link rel="icon" href="/img/drop_39204.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/styles.css">
+        <!-- FontAwesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <!-- Scripts for Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Using Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #006d77;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img class="logo" src="/img/projlogo.svg" width="30" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link pagename" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link pagename" href="/journal.html">Journal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pagename" href="/human.html">Human Practices</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <!-- Wetlab Journal intro -->
+        <div class="container-fluid padding">
+        <div class="row padding content">
+            <div class="col-md-12 col-lg-12">
+                <h1 class="firstheading">Wet Lab Journal</h1>
+                <hr>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <p>In order to create our <u>portable and cost-effective</u> biosensor, we decided to utilize 6GIX, a water soluble protein with a chlorophyll-binding domain. By genetically engineering <i>E. coli</i>, our team can upscale the production of 6GIX to integrate this protein into our hardware design. </p>
+            </div>
+        </div>
+        </div>
+        <!-- Flowchart -->
+        <div class="container-fluid padding">
+        <div class="row padding content">
+            <div class="col-md-12 col-lg-12">
+                <h2>Workflow</h2>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <figure>
+                    <img class="img-fluid" id="flowchart" src="/img/labflowchart.png" alt="Lab Workflow Diagram">
+                    <figcaption class="wetlabfigcap"> <strong> Figure 1.</strong> Flow diagram indicating iGEM 2021 wet lab workflow of completed project steps (Digestion + Ligation, Transformation, cPCR, and Gel electrophoresis). Next steps of the project are listed at the bottom of the diagram.</figcaption>
+                </figure>
+            </div>
+        </div>
+        </div>
+        <!-- Protocols -->
+        <div class="container-fluid padding">
+        <div class="row padding content">
+            <div class="col-md-12 col-lg-12">
+                <h2>Protocols</h2>
+               <p>Please note that the values in these protocols have been specified for the particular reagents used in these experiments.</p>
+            </div>
+        </div>
+        </div>
+        <!-- Accordion for protocols -->
+        <div class="container-fluid padding">
+            <div class="row padding content">
+                <div class="col-md-12 col-lg-12 centerBlock">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="protocolstep">
+                              Digestion</a>
+                            </h4>
+                            <hr class="protocolbreak">
+                          </div>
+                          <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                              <ol class="accordionlist">
+                                <li>To a microcentrifuge tube, add:</li>
+                                    <ul class="accordionlist">
+                                        <li>15 uL of DNA to be digested</li>
+                                        <li>2μl of appropriate 2.1 buffer</li>
+                                        <li>1μl of EcoRI HF</li>
+                                        <li>1μl of PstI</li>
+                                        <li>1 uL ddH<sub>2</sub>O to final volume (final volume = 20μL)</li>
+                                    </ul>
+                                <li>To a microcentrifuge tube, for the vector DNA, add:</li>
+                                    <ul class="accordionlist">
+                                      <li>5 μl of PSB1C3</li>
+                                      <li>1 μl of 2.1 buffer</li>
+                                      <li>1 μl of EcoRI HF</li>
+                                      <li>1 μl of PstI</li>
+                                      <li>2 μl ddH<sub>2</sub>O to final volume (final volume = 10μL)</li>
+                                </ul>
+                                <li>Incubate microcentrifuge tube at 37°C for 30 minutes to 3 hours</li>
+                                <li>Heat inactivate restriction enzymes at 82°C for 20 minutes</li>
+                                <li>For subsequent ligation, run on LMP gel and excise or gel-extract. Otherwise, store at -20°C</li>
+                            </ol>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="protocolstep">
+                              Ligation</a>
+                            </h4>
+                            <hr class="protocolbreak">
+                          </div>
+                          <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <ol class="accordionlist">
+                                <li>To a microcentrifuge tube, add:</li>
+                                    <ul class="accordionlist">
+                                        <li>2 μl digested vector DNA (PSB1C3)</li>
+                                        <li>20 μl digested insert DNA </li>
+                                        <li>3 μl of aliquoted 10X T4 DNA ligase buffer</li>
+                                        <li>1 μl of T4 DNA ligase (1U/μl)</li>
+                                        <li>4 μl ddH<sub>2</sub>O to final volume (final volume = 30μL)</li>
+                                    </ul>
+                                <li>Incubate at room temperature for 2 hours</li>
+                                <li>Transform chemically competent cells with the ligation product. </li>
+                                <li>Leave remaining ligation product at room temperature overnight, and transform again the following day.</li>
+                                <li>Store remaining product at -20°C</li>
+                            </ol>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="protocolstep">
+                              Sample calculation for Digestion + Ligation</a>
+                            </h4>
+                            <hr class="protocolbreak">
+                          </div>
+                          <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <p>Insert length = 615bp (6GIX+6His construct digested using EcoRI and PstI)</p>
+                              <p>Vector length = 2070 bp (plasmid is psB1C3)</p>
+                              <p>Vector mass = 25 ng</p>
+                              <p>Input into calculator: for a 1:1 ligation → insert mass = 7.428 ng</p>
+                              <p>[Insert] = 0.5 ng/mL</p>
+                              <p>Volume of insert to be added to digestion = 7.428 ng / 0.5 ng/μL = 14.856 μL = <strong>15 μL</strong> </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="protocolstep">
+                              Transformation</a>
+                            </h4>
+                            <hr class="protocolbreak">
+                          </div>
+                          <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <ol class="accordionlist">
+                                <li>Add ≤ 5μl (≤ 1/10 of the cell aliquot amount) of the DNA sample to a chemically competent cell aliquot. Mix by pipetting gently, then incubate on ice for 30 to 45 minutes.</li>
+                                <li>Heat shock at 42°C for 60-75 seconds</li>
+                                <li>Incubate on ice for 5 minutes</li>
+                                <li>Add 250μl of plain LB or SOC media aseptically, then incubate for 30 to 90 minutes at 37°C, shaking</li>
+                                <li>Plate 100μl aseptically</li>
+                                <li>Incubate plate at 37°C overnight or until growth is observed</li>
+                            </ol>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="protocolstep">
+                              cPCR</a>
+                            </h4>
+                            <hr class="protocolbreak">
+                          </div>
+                          <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <ol class="accordionlist">
+                                <li>Create cPCR master mix as follows:</li>
+                                    <ul class="accordionlist">
+                                        <li>20μL 10X Taq Buffer</li>
+                                        <li>4μL 10μM VF2 primer (or other forward primer)</li>
+                                        <li>4μL 10μM VR primer (or other reverse primer)</li>
+                                        <li>4μL 10mM dNTPs</li>
+                                        <li>1μL Taq Polymerase</li>
+                                        <li>127μL ddH<sub>2</sub>O</li>
+                                    </ul>
+                                <li>Add 4μL of ddH2O to each PCR tube or well (of a 96-well plate)</li>
+                                <li>Using pipette tips or sterile toothpicks, touch an individual labelled colony, swirl in the ddH<sub>2</sub>O, and then streak on masterplate. Repeat for as many colonies as desired.</li>
+                                <li>Add 16μL of cPCR mastermix to each tube/well</li>
+                                <li>Place in thermocycler and select or set up the appropriate program as follows:</li>
+                                    <ul class="accordionlist">
+                                        <li>Initial denaturation → 95°C for 5 minutes</li>
+                                        <li>Repeat 30x:</li>
+                                            <ol class="accordionlist" type="i">
+                                                <li>Denaturation → 95°C for 30 seconds</li>
+                                                <li>Annealing → 53°C for 30 seconds</li>
+                                                <li>Extension → 68°C for 1 minute per kilobase</li>
+                                            </ol>
+                                        <li>Final extension → 68°C for 5 minutes</li>
+                                        <li>Hold at 4°C </li>
+                                    </ul>
+                            </ol>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="protocolstep">
+                              Gel Electrophoresis</a>
+                            </h4>
+                            <hr class="protocolbreak">
+                          </div>
+                          <div id="collapse6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              <ol class="accordionlist">
+                                <li>Mix 100ml of 1X TAE buffer with 1g of regular or LMP agarose (for a 1% gel).</li>
+                                <li>Microwave covered for about 1.5 minutes or until agarose is dissolved</li>
+                                <li>Cool and add 4μl SYBR safe. For a small gel, add 1.5μl SYBR safe.</li>
+                                <li>Set up the gel tray and balance properly. Pour and cast gel. LMP gels should be cast in the fridge.</li>
+                                <li>Plate 100μl aseptically</li>
+                                <li>Run sample at 100V (regular gel) until sample is ¾ of the way down the gel.</li>
+                            </ol>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- cPCR Agarose Gel Picture -->
+        <div class="container-fluid padding">
+        <div class="row padding content">
+            <div class="col-md-12 col-lg-12">
+                <figure>
+                    <img class="img-fluid" id="gelresult" src="/img/gelresults.png" alt="cPCR Gel Results">
+                    <figcaption class="wetlabfigcap"> <strong> Figure 2.</strong> 1% agarose gel showing colony polymerase chain reaction of 6GIX insert in PSBIC3. Gel was run at 100V for 30 min. Molecular ladder used was from BioBasic and is 100-1500bp in length. Expected band size for 6GIX is 709bp.</figcaption>
+                </figure>
+            </div>
+        </div>
+        </div>
+        <!-- Wetlab Results and Discussion -->
+        <div class="container-fluid padding lastsection">
+        <div class="row padding content">
+            <div class="col-md-12 col-lg-12">
+                <h2>Gel Electrophoresis Results and Discussion</h2>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <p>The gel image above shows the results of Simran’s (an iGEM 2021 Wet Lab member) colony PCR. The molecular ladder utilized is present in lane 1 in both rows. In the first row, lanes 2-9 contain Simran’s PCR colony. In these lanes, no bands are observed. Meanwhile, bands observed in lanes 11-17 (which contain the positive control- glycerol stock of the 6GIX construct). The results of this first row indicate that the PCR amplification was unsuccessful as no bands were visualized in Simran’s lanes, and thus, the insert is not observed. The second row/replicate of the gel electrophoresis experiment shows similar results. In this case, lanes 2-7 contained the positive controls and lanes 9-16 contained Simran’s PCR colony. Again, no bands were observed for lanes 9-16. Similar to row one, this indicates a failed cPCR.</p>
+                <p>In terms of next steps, since no bands were visualized, the team will need to troubleshoot to determine the root of the issue. For example, these results could indicate that one of the previous experiments (cPCR, digestion, etc.) was unsuccessful. The team will repeat steps in an attempt to troubleshoot and obtain better results. Additionally, it could also be possible that not enough DNA was present to be visible. In this case, cPCR will need to be repeated for better results.</p>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
+
